@@ -22,7 +22,7 @@ document.querySelectorAll(".faq-question").forEach((btn) => {
 });
 
 (() => {
-  const total = 5;
+  const total = 7;
   const base = "images/certificates";
 
   const root = document.querySelector(".certs-carousel");
@@ -87,7 +87,7 @@ document.querySelectorAll(".faq-question").forEach((btn) => {
 
     if (dotsWrap) {
       [...dotsWrap.children].forEach((d, i) =>
-        d.setAttribute("aria-selected", String(i === index))
+        d.setAttribute("aria-selected", String(i === index)),
       );
     }
   };
